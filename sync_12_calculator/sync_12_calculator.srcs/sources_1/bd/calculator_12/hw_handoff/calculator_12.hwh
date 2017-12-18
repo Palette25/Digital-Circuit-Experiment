@@ -1,0 +1,727 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Dec 10 20:52:07 2017" VIVADOVERSION="2017.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="calculator_12" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="sign" SIGIS="undef" SIGNAME="External_Ports_sign">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="calcaulator_0" PORT="sign"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_div_0" PORT="clk_in"/>
+        <CONNECTION INSTANCE="clk_div_1" PORT="clk_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="a" SIGIS="undef" SIGNAME="bcdchange_1_a">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdchange_1" PORT="a"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="b" SIGIS="undef" SIGNAME="bcdchange_1_b">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdchange_1" PORT="b"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="c" SIGIS="undef" SIGNAME="bcdchange_1_c">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdchange_1" PORT="c"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="d" SIGIS="undef" SIGNAME="bcdchange_1_d">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdchange_1" PORT="d"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="e" SIGIS="undef" SIGNAME="bcdchange_1_e">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdchange_1" PORT="e"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="f" SIGIS="undef" SIGNAME="bcdchange_1_f">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdchange_1" PORT="f"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="bcdchange_1_g">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdchange_1" PORT="g"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="u2" SIGIS="undef" SIGNAME="HIGH_0_h">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="HIGH_0" PORT="h"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="u4" SIGIS="undef" SIGNAME="HIGH_1_h">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="HIGH_1" PORT="h"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="k4" SIGIS="undef" SIGNAME="decimal_counter_0_Qa">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decimal_counter_0" PORT="Qa"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="w4" SIGIS="undef" SIGNAME="NOT_3_a_f">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="NOT_3" PORT="a_f"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/Ground_0" HWVERSION="1.0" INSTANCE="Ground_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Ground" VLNV="xilinx.com:module_ref:Ground:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_Ground_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="o" SIGIS="undef" SIGNAME="Ground_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_8_to_1_0" PORT="D1"/>
+            <CONNECTION INSTANCE="mux_8_to_1_1" PORT="D1"/>
+            <CONNECTION INSTANCE="mux_8_to_1_2" PORT="D1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/HIGH_0" HWVERSION="1.0" INSTANCE="HIGH_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="HIGH" VLNV="xilinx.com:module_ref:HIGH:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_HIGH_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="h" SIGIS="undef" SIGNAME="HIGH_0_h">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="u2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/HIGH_1" HWVERSION="1.0" INSTANCE="HIGH_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="HIGH" VLNV="xilinx.com:module_ref:HIGH:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_HIGH_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="h" SIGIS="undef" SIGNAME="HIGH_1_h">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="u4"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/NOT_0" HWVERSION="1.0" INSTANCE="NOT_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="NOT" VLNV="xilinx.com:module_ref:NOT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_NOT_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="turn_3_0_o3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_3_0" PORT="o3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a_f" SIGIS="undef" SIGNAME="NOT_0_a_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four_2_input_and_gate_0" PORT="A3"/>
+            <CONNECTION INSTANCE="four_2_input_and_gate_0" PORT="A4"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/NOT_1" HWVERSION="1.0" INSTANCE="NOT_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="NOT" VLNV="xilinx.com:module_ref:NOT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_NOT_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="turn_3_0_o1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_3_0" PORT="o1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a_f" SIGIS="undef" SIGNAME="NOT_1_a_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="three_and_0" PORT="k2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/NOT_2" HWVERSION="1.0" INSTANCE="NOT_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="NOT" VLNV="xilinx.com:module_ref:NOT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_NOT_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="turn_3_0_o2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_3_0" PORT="o2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a_f" SIGIS="undef" SIGNAME="NOT_2_a_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="three_and_0" PORT="k3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/NOT_3" HWVERSION="1.0" INSTANCE="NOT_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="NOT" VLNV="xilinx.com:module_ref:NOT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_NOT_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="decimal_counter_0_Qa">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decimal_counter_0" PORT="Qa"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a_f" SIGIS="undef" SIGNAME="NOT_3_a_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="w4"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/OR_0" HWVERSION="1.0" INSTANCE="OR_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="OR" VLNV="xilinx.com:module_ref:OR:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_OR_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="x1" SIGIS="undef" SIGNAME="four_2_input_and_gate_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four_2_input_and_gate_0" PORT="Y1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x2" SIGIS="undef" SIGNAME="four_2_input_and_gate_0_Y3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four_2_input_and_gate_0" PORT="Y3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="re" SIGIS="undef" SIGNAME="OR_0_re">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_8_to_1_2" PORT="D0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/OR_1" HWVERSION="1.0" INSTANCE="OR_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="OR" VLNV="xilinx.com:module_ref:OR:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_OR_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="x1" SIGIS="undef" SIGNAME="four_2_input_and_gate_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four_2_input_and_gate_0" PORT="Y1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x2" SIGIS="undef" SIGNAME="four_2_input_and_gate_0_Y2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four_2_input_and_gate_0" PORT="Y2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="re" SIGIS="undef" SIGNAME="OR_1_re">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_8_to_1_3" PORT="D1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/bcdchange_1" HWVERSION="1.0" INSTANCE="bcdchange_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="bcdchange" VLNV="xilinx.com:module_ref:bcdchange:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_bcdchange_1_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="t0" SIGIS="undef" SIGNAME="mux_8_to_1_3_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_8_to_1_3" PORT="Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="t1" SIGIS="undef" SIGNAME="mux_8_to_1_2_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_8_to_1_2" PORT="Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="t2" SIGIS="undef" SIGNAME="mux_8_to_1_1_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_8_to_1_1" PORT="Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="t3" SIGIS="undef" SIGNAME="mux_8_to_1_0_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_8_to_1_0" PORT="Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a" SIGIS="undef" SIGNAME="bcdchange_1_a">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="b" SIGIS="undef" SIGNAME="bcdchange_1_b">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c" SIGIS="undef" SIGNAME="bcdchange_1_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="c"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="d" SIGIS="undef" SIGNAME="bcdchange_1_d">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="d"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="e" SIGIS="undef" SIGNAME="bcdchange_1_e">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="e"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="f" SIGIS="undef" SIGNAME="bcdchange_1_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="bcdchange_1_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/calcaulator_0" HWVERSION="1.0" INSTANCE="calcaulator_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="calcaulator" VLNV="xilinx.com:module_ref:calcaulator:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_calcaulator_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="sign" SIGIS="undef" SIGNAME="External_Ports_sign">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sign"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="clk_div_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_div_0" PORT="clk_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="o" RIGHT="0" SIGIS="undef" SIGNAME="calcaulator_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_3_0" PORT="in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/clk_div_0" HWVERSION="1.0" INSTANCE="clk_div_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_div" VLNV="xilinx.com:xup:clk_div:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="N" VALUE="100000000"/>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_clk_div_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_in" SIGIS="undef" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_out" SIGIS="undef" SIGNAME="clk_div_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="calcaulator_0" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/clk_div_1" HWVERSION="1.0" INSTANCE="clk_div_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_div" VLNV="xilinx.com:xup:clk_div:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="N" VALUE="999999"/>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_clk_div_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_in" SIGIS="undef" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_out" SIGIS="undef" SIGNAME="clk_div_1_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decimal_counter_0" PORT="CP1_n"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/decimal_counter_0" HWVERSION="1.0" INSTANCE="decimal_counter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="decimal_counter" VLNV="xilinx.com:xup:decimal_counter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_decimal_counter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="CP1_n" SIGIS="undef" SIGNAME="clk_div_1_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_div_1" PORT="clk_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CP2_n" SIGIS="undef"/>
+        <PORT DIR="I" NAME="R0_1" SIGIS="undef"/>
+        <PORT DIR="I" NAME="R0_2" SIGIS="undef"/>
+        <PORT DIR="I" NAME="R9_1" SIGIS="undef"/>
+        <PORT DIR="I" NAME="R9_2" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Qa" SIGIS="undef" SIGNAME="decimal_counter_0_Qa">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_8_to_1_0" PORT="A0"/>
+            <CONNECTION INSTANCE="mux_8_to_1_1" PORT="A0"/>
+            <CONNECTION INSTANCE="mux_8_to_1_2" PORT="A0"/>
+            <CONNECTION INSTANCE="mux_8_to_1_3" PORT="A0"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="k4"/>
+            <CONNECTION INSTANCE="NOT_3" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Qb" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Qc" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Qd" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/four_2_input_and_gate_0" HWVERSION="1.0" INSTANCE="four_2_input_and_gate_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="four_2_input_and_gate" VLNV="xilinx.com:XUP:four_2_input_and_gate:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Delay" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_four_2_input_and_gate_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="turn_3_0_o3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_3_0" PORT="o3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B1" SIGIS="undef" SIGNAME="turn_3_0_o2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_3_0" PORT="o2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="turn_3_0_o3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_3_0" PORT="o3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B2" SIGIS="undef" SIGNAME="turn_3_0_o1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_3_0" PORT="o1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A3" SIGIS="undef" SIGNAME="NOT_0_a_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NOT_0" PORT="a_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B3" SIGIS="undef" SIGNAME="turn_3_0_o1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_3_0" PORT="o1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A4" SIGIS="undef" SIGNAME="NOT_0_a_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NOT_0" PORT="a_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B4" SIGIS="undef" SIGNAME="turn_3_0_o2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_3_0" PORT="o2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y1" SIGIS="undef" SIGNAME="four_2_input_and_gate_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="OR_0" PORT="x1"/>
+            <CONNECTION INSTANCE="OR_1" PORT="x1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y2" SIGIS="undef" SIGNAME="four_2_input_and_gate_0_Y2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="OR_1" PORT="x2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y3" SIGIS="undef" SIGNAME="four_2_input_and_gate_0_Y3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="OR_0" PORT="x2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y4" SIGIS="undef" SIGNAME="four_2_input_and_gate_0_Y4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_8_to_1_1" PORT="D0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/mux_8_to_1_0" HWVERSION="1.0" INSTANCE="mux_8_to_1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux_8_to_1" VLNV="xilinx.com:xup:mux_8_to_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_mux_8_to_1_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="S_n" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A2" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A1" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="decimal_counter_0_Qa">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decimal_counter_0" PORT="Qa"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D7" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D6" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D5" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D4" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D3" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D2" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D1" SIGIS="undef" SIGNAME="Ground_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Ground_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D0" SIGIS="undef" SIGNAME="three_and_0_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="three_and_0" PORT="out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q" SIGIS="undef" SIGNAME="mux_8_to_1_0_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bcdchange_1" PORT="t3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q_n" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/mux_8_to_1_1" HWVERSION="1.0" INSTANCE="mux_8_to_1_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux_8_to_1" VLNV="xilinx.com:xup:mux_8_to_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_mux_8_to_1_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="S_n" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A2" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A1" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="decimal_counter_0_Qa">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decimal_counter_0" PORT="Qa"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D7" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D6" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D5" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D4" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D3" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D2" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D1" SIGIS="undef" SIGNAME="Ground_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Ground_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D0" SIGIS="undef" SIGNAME="four_2_input_and_gate_0_Y4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four_2_input_and_gate_0" PORT="Y4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q" SIGIS="undef" SIGNAME="mux_8_to_1_1_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bcdchange_1" PORT="t2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q_n" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/mux_8_to_1_2" HWVERSION="1.0" INSTANCE="mux_8_to_1_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux_8_to_1" VLNV="xilinx.com:xup:mux_8_to_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_mux_8_to_1_1_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="S_n" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A2" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A1" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="decimal_counter_0_Qa">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decimal_counter_0" PORT="Qa"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D7" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D6" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D5" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D4" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D3" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D2" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D1" SIGIS="undef" SIGNAME="Ground_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Ground_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D0" SIGIS="undef" SIGNAME="OR_0_re">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="OR_0" PORT="re"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q" SIGIS="undef" SIGNAME="mux_8_to_1_2_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bcdchange_1" PORT="t1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q_n" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/mux_8_to_1_3" HWVERSION="1.0" INSTANCE="mux_8_to_1_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux_8_to_1" VLNV="xilinx.com:xup:mux_8_to_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_mux_8_to_1_1_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="S_n" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A2" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A1" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="decimal_counter_0_Qa">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decimal_counter_0" PORT="Qa"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D7" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D6" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D5" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D4" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D3" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D2" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D1" SIGIS="undef" SIGNAME="OR_1_re">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="OR_1" PORT="re"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D0" SIGIS="undef" SIGNAME="turn_3_0_o0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_3_0" PORT="o0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q" SIGIS="undef" SIGNAME="mux_8_to_1_3_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bcdchange_1" PORT="t0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q_n" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/three_and_0" HWVERSION="1.0" INSTANCE="three_and_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="three_and" VLNV="xilinx.com:module_ref:three_and:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_three_and_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="k1" SIGIS="undef" SIGNAME="turn_3_0_o3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_3_0" PORT="o3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="k2" SIGIS="undef" SIGNAME="NOT_1_a_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NOT_1" PORT="a_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="k3" SIGIS="undef" SIGNAME="NOT_2_a_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NOT_2" PORT="a_f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out" SIGIS="undef" SIGNAME="three_and_0_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_8_to_1_0" PORT="D0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/turn_3_0" HWVERSION="1.0" INSTANCE="turn_3_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="turn_3" VLNV="xilinx.com:module_ref:turn_3:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_12_turn_3_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="in" RIGHT="0" SIGIS="undef" SIGNAME="calcaulator_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="calcaulator_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o0" SIGIS="undef" SIGNAME="turn_3_0_o0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_8_to_1_3" PORT="D0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o1" SIGIS="undef" SIGNAME="turn_3_0_o1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four_2_input_and_gate_0" PORT="B2"/>
+            <CONNECTION INSTANCE="four_2_input_and_gate_0" PORT="B3"/>
+            <CONNECTION INSTANCE="NOT_1" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o2" SIGIS="undef" SIGNAME="turn_3_0_o2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four_2_input_and_gate_0" PORT="B1"/>
+            <CONNECTION INSTANCE="four_2_input_and_gate_0" PORT="B4"/>
+            <CONNECTION INSTANCE="NOT_2" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o3" SIGIS="undef" SIGNAME="turn_3_0_o3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four_2_input_and_gate_0" PORT="A1"/>
+            <CONNECTION INSTANCE="four_2_input_and_gate_0" PORT="A2"/>
+            <CONNECTION INSTANCE="NOT_0" PORT="a"/>
+            <CONNECTION INSTANCE="three_and_0" PORT="k1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

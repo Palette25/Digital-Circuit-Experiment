@@ -1,0 +1,153 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port click -pg 1 -y -430 -defaultsOSRD
+preplace port Q1 -pg 1 -y 70 -defaultsOSRD
+preplace port Q2 -pg 1 -y 90 -defaultsOSRD
+preplace port sign -pg 1 -y -320 -defaultsOSRD
+preplace port State -pg 1 -y -830 -defaultsOSRD
+preplace port a -pg 1 -y -100 -defaultsOSRD
+preplace port AN0 -pg 1 -y -770 -defaultsOSRD
+preplace port b -pg 1 -y -80 -defaultsOSRD
+preplace port CLK -pg 1 -y -590 -defaultsOSRD
+preplace port AN1 -pg 1 -y -750 -defaultsOSRD
+preplace port c -pg 1 -y -60 -defaultsOSRD
+preplace port mode -pg 1 -lvl 9:30 -defaultsOSRD -bot
+preplace port AN2 -pg 1 -y -730 -defaultsOSRD
+preplace port d -pg 1 -y -40 -defaultsOSRD
+preplace port AN3 -pg 1 -y -710 -defaultsOSRD
+preplace port e -pg 1 -y -20 -defaultsOSRD
+preplace port S1 -pg 1 -y -1060 -defaultsOSRD
+preplace port f -pg 1 -y 0 -defaultsOSRD
+preplace port S2 -pg 1 -y -1040 -defaultsOSRD
+preplace port g -pg 1 -y 20 -defaultsOSRD
+preplace inst one_or_0 -pg 1 -lvl 3 -y -800 -defaultsOSRD
+preplace inst min_generator_0 -pg 1 -lvl 8 -y -710 -defaultsOSRD
+preplace inst data_chooser_4 -pg 1 -lvl 12 -y -10 -defaultsOSRD
+preplace inst Ground_0 -pg 1 -lvl 14 -y -650 -defaultsOSRD
+preplace inst clk_div_3 -pg 1 -lvl 2 -y -290 -defaultsOSRD
+preplace inst tran_2_0 -pg 1 -lvl 16 -y -480 -defaultsOSRD
+preplace inst hour_generator_0 -pg 1 -lvl 8 -y -560 -defaultsOSRD
+preplace inst HIGH_0 -pg 1 -lvl 3 -y -1070 -defaultsOSRD
+preplace inst Ground_1 -pg 1 -lvl 17 -y -280 -defaultsOSRD
+preplace inst tran_2_1 -pg 1 -lvl 13 -y -300 -defaultsOSRD
+preplace inst HIGH_1 -pg 1 -lvl 14 -y -840 -defaultsOSRD
+preplace inst Ground_2 -pg 1 -lvl 6 -y -230 -defaultsOSRD
+preplace inst tran_2_2 -pg 1 -lvl 2 -y -870 -defaultsOSRD
+preplace inst two_clk_0 -pg 1 -lvl 3 -y -410 -defaultsOSRD
+preplace inst select_153_0 -pg 1 -lvl 18 -y -590 -defaultsOSRD
+preplace inst steper_0 -pg 1 -lvl 14 -y -490 -defaultsOSRD
+preplace inst day_generator_0 -pg 1 -lvl 8 -y -390 -defaultsOSRD
+preplace inst clock_chooser_0 -pg 1 -lvl 5 -y -400 -defaultsOSRD
+preplace inst bcdTo7seg_0 -pg 1 -lvl 16 -y -40 -defaultsOSRD
+preplace inst turn_4_0 -pg 1 -lvl 15 -y -10 -defaultsOSRD
+preplace inst steper_1 -pg 1 -lvl 1 -y -830 -defaultsOSRD
+preplace inst mon_generator_0 -pg 1 -lvl 8 -y -230 -defaultsOSRD
+preplace inst alink_0 -pg 1 -lvl 4 -y -180 -defaultsOSRD
+preplace inst five_or_0 -pg 1 -lvl 7 -y -820 -defaultsOSRD
+preplace inst data_chooser_0 -pg 1 -lvl 10 -y -880 -defaultsOSRD
+preplace inst OR_0 -pg 1 -lvl 20 -y -740 -defaultsOSRD
+preplace inst year_generator_0 -pg 1 -lvl 8 -y -90 -defaultsOSRD
+preplace inst steper_3_0 -pg 1 -lvl 11 -y -300 -defaultsOSRD
+preplace inst sec_generator_0 -pg 1 -lvl 8 -y -880 -defaultsOSRD
+preplace inst data_chooser_1 -pg 1 -lvl 10 -y -680 -defaultsOSRD
+preplace inst decode138_0 -pg 1 -lvl 17 -y -800 -defaultsOSRD
+preplace inst clk_div_0 -pg 1 -lvl 2 -y -680 -defaultsOSRD
+preplace inst turn_3_0 -pg 1 -lvl 19 -y -530 -defaultsOSRD
+preplace inst data_chooser_2 -pg 1 -lvl 10 -y -400 -defaultsOSRD
+preplace inst decode138_1 -pg 1 -lvl 4 -y -620 -defaultsOSRD
+preplace inst clk_div_1 -pg 1 -lvl 2 -y -590 -defaultsOSRD
+preplace inst data_chooser_3 -pg 1 -lvl 10 -y -180 -defaultsOSRD
+preplace inst clk_div_2 -pg 1 -lvl 2 -y -460 -defaultsOSRD
+preplace netloc min_generator_0_rco 1 6 3 600J -630 NJ -630 1270
+preplace netloc mode_1 1 9 2 1560 -300 NJ
+preplace netloc clk_div_0_clk_out 1 2 1 -670
+preplace netloc clock_chooser_0_min_clk 1 5 3 360 -620 NJ -620 970J
+preplace netloc five_or_0_Y0 1 7 1 980J
+preplace netloc five_or_0_Y1 1 7 1 960J
+preplace netloc clk_div_3_clk_out 1 2 2 NJ -290 -400
+preplace netloc five_or_0_Y2 1 7 1 940J
+preplace netloc decode138_0_Y3_n 1 17 3 NJ -810 NJ -810 4070
+preplace netloc clk_div_1_clk_out 1 2 1 -680
+preplace netloc Ground_0_o 1 14 3 2900J -750 NJ -750 3410
+preplace netloc data_chooser_1_Y 1 10 2 NJ -680 2160
+preplace netloc OR_0_o0 1 20 1 N
+preplace netloc steper_3_0_o 1 11 2 N -300 NJ
+preplace netloc five_or_0_Y3 1 7 1 910J
+preplace netloc OR_0_o1 1 20 1 N
+preplace netloc clock_chooser_0_day_clk 1 5 3 360J -400 NJ -400 NJ
+preplace netloc five_or_0_Y4 1 7 1 890J
+preplace netloc tran_2_2_Q1 1 2 19 NJ -880 -390J -790 NJ -790 NJ -790 580J -660 920J -810 NJ -810 1580 -1060 NJ -1060 NJ -1060 NJ -1060 NJ -1060 NJ -1060 NJ -1060 NJ -1060 NJ -1060 NJ -1060 NJ -1060 NJ
+preplace netloc steper_1_Q 1 1 1 -900
+preplace netloc OR_0_o2 1 20 1 N
+preplace netloc OR_0_o3 1 20 1 N
+preplace netloc tran_2_2_Q2 1 2 19 -640J -870 -410J -740 NJ -740 NJ -740 560J -650 950J -790 NJ -790 1590 -1040 NJ -1040 NJ -1040 NJ -1040 NJ -1040 NJ -1040 NJ -1040 NJ -1040 NJ -1040 NJ -1040 NJ -1040 NJ
+preplace netloc two_clk_0_clk 1 3 2 NJ -410 N
+preplace netloc Ground_2_o 1 3 4 -380 -750 NJ -750 NJ -750 550
+preplace netloc year_generator_0_year_0 1 8 2 1320 -830 NJ
+preplace netloc sign_1 1 0 3 -1130J -390 NJ -390 NJ
+preplace netloc decode138_0_Y1_n 1 17 3 NJ -850 NJ -850 4100
+preplace netloc HIGH_1_o 1 14 3 NJ -840 NJ -840 3400
+preplace netloc clock_chooser_0_sec_clk 1 5 3 350J -970 NJ -970 980J
+preplace netloc year_generator_0_year_1 1 8 2 1350 -630 NJ
+preplace netloc day_generator_0_day_0 1 8 2 1290 -850 NJ
+preplace netloc decode138_1_Y2_n 1 4 1 -110
+preplace netloc day_generator_0_day_1 1 8 2 1300 -650 NJ
+preplace netloc year_generator_0_year_2 1 8 2 1370J -350 NJ
+preplace netloc year_generator_0_year_3 1 8 2 1380J -130 NJ
+preplace netloc tran_2_0_Q1 1 11 6 2180 -400 NJ -400 NJ -400 NJ -400 NJ -400 3380
+preplace netloc clk_div_2_clk_out 1 2 12 -660J -500 NJ -500 -120J -520 NJ -520 NJ -520 920J -490 1310J -500 NJ -500 NJ -500 NJ -500 NJ -500 2670J
+preplace netloc one_or_0_spc 1 3 4 -420 -830 NJ -830 NJ -830 NJ
+preplace netloc tran_2_0_Q2 1 11 6 2190 -390 NJ -390 NJ -390 NJ -390 NJ -390 3390
+preplace netloc data_chooser_2_Y 1 10 2 NJ -400 2150
+preplace netloc CLK_1 1 0 2 NJ -590 -900
+preplace netloc clock_chooser_0_hour_clk 1 5 3 370J -570 NJ -570 NJ
+preplace netloc one_or_0_o 1 3 4 N -810 NJ -810 NJ -810 590J
+preplace netloc State_1 1 0 1 N
+preplace netloc mon_generator_0_mon_0 1 8 2 1360J -370 NJ
+preplace netloc sec_generator_0_rco 1 6 3 620J -960 NJ -960 1290
+preplace netloc decode138_0_Y2_n 1 17 3 NJ -830 NJ -830 4080
+preplace netloc mon_generator_0_mon_1 1 8 2 NJ -230 1530
+preplace netloc clock_chooser_0_mon_clk 1 5 3 NJ -370 NJ -370 900J
+preplace netloc min_generator_0_min_0 1 8 2 NJ -730 1530
+preplace netloc turn_4_0_x0 1 15 1 3120
+preplace netloc hour_generator_0_rco 1 6 3 620J -670 930J -780 1280
+preplace netloc min_generator_0_min_1 1 8 2 NJ -710 1550
+preplace netloc turn_4_0_x1 1 15 1 3130
+preplace netloc turn_4_0_x2 1 15 1 3140
+preplace netloc turn_4_0_x3 1 15 1 3150
+preplace netloc decode138_1_Y3_n 1 4 1 -140
+preplace netloc mon_generator_0_rco 1 6 3 630J -480 NJ -480 1280
+preplace netloc data_chooser_4_Y 1 12 3 N -10 NJ -10 NJ
+preplace netloc bcdTo7seg_0_a 1 16 5 N -100 NJ -100 NJ -100 NJ -100 NJ
+preplace netloc day_generator_0_rco 1 6 3 610J -460 NJ -460 1270
+preplace netloc tran_2_1_Q1 1 2 19 -650 -480 NJ -480 -160J -280 350J -310 NJ -310 NJ -310 1340J -280 NJ -280 1900J -230 NJ -230 NJ -230 2660 -230 NJ -230 NJ -230 3400J -210 3580J -210 NJ -210 NJ -210 4330
+preplace netloc bcdTo7seg_0_b 1 16 5 N -80 NJ -80 NJ -80 NJ -80 NJ
+preplace netloc data_chooser_0_Y 1 10 2 NJ -880 2170
+preplace netloc hour_generator_0_hour_0 1 8 2 NJ -580 1560
+preplace netloc tran_2_1_Q2 1 2 19 -640 -520 -390J -490 -150J -270 360J -300 NJ -300 NJ -300 1330J -290 NJ -290 1910J -220 NJ -220 NJ -220 2670J -350 NJ -350 NJ -350 NJ -350 3590 -350 NJ -350 NJ -350 4340
+preplace netloc bcdTo7seg_0_c 1 16 5 N -60 NJ -60 NJ -60 NJ -60 NJ
+preplace netloc bcdTo7seg_0_d 1 16 5 N -40 NJ -40 NJ -40 NJ -40 NJ
+preplace netloc hour_generator_0_hour_1 1 8 2 NJ -560 1540
+preplace netloc bcdTo7seg_0_e 1 16 5 N -20 NJ -20 NJ -20 NJ -20 NJ
+preplace netloc decode138_1_Y1_n 1 4 1 -100
+preplace netloc click_1 1 0 5 -1130J -510 NJ -510 NJ -510 -410J -470 NJ
+preplace netloc bcdTo7seg_0_f 1 16 5 N 0 NJ 0 NJ 0 NJ 0 NJ
+preplace netloc bcdTo7seg_0_g 1 16 5 N 20 NJ 20 NJ 20 NJ 20 NJ
+preplace netloc data_chooser_3_Y 1 10 2 NJ -180 2140
+preplace netloc Ground_1_o 1 17 1 3570
+preplace netloc sec_generator_0_sec_0 1 8 2 NJ -900 1600J
+preplace netloc alink_0_state 1 4 14 -130 -640 NJ -640 NJ -640 NJ -640 NJ -640 1570J -580 NJ -580 NJ -580 NJ -580 NJ -580 2900J -640 NJ -640 NJ -640 3590J
+preplace netloc sec_generator_0_sec_1 1 8 2 NJ -880 1600
+preplace netloc turn_3_0_o0 1 19 1 4110
+preplace netloc decode138_1_Y0_n 1 4 1 -90
+preplace netloc turn_3_0_o1 1 19 1 4090
+preplace netloc select_153_0_Y 1 18 1 3830J
+preplace netloc steper_0_Q 1 14 2 NJ -490 3120J
+preplace netloc HIGH_0_o 1 3 5 -400 -770 NJ -770 NJ -770 570J -680 900
+preplace netloc decode138_0_Y0_n 1 17 3 NJ -870 NJ -870 4110
+preplace netloc clock_chooser_0_year_clk 1 5 3 NJ -350 NJ -350 880J
+levelinfo -pg 1 -1150 -1010 -790 -530 -270 230 470 770 1140 1470 1780 2030 2310 2550 2790 3010 3270 3490 3720 3960 4220 4380 -top -1240 -bot 290
+",
+}
+0

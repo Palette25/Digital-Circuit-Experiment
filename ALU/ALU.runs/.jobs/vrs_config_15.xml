@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ALU_mux_8_to_1_0_0_synth_1" LaunchDir="E:/VivadoProjects/ALU/ALU.runs/ALU_mux_8_to_1_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ALU_mux_8_to_1_1_0_synth_1" LaunchDir="E:/VivadoProjects/ALU/ALU.runs/ALU_mux_8_to_1_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ALU_decode138_0_0_synth_1" LaunchDir="E:/VivadoProjects/ALU/ALU.runs/ALU_decode138_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ALU_decode138_1_0_synth_1" LaunchDir="E:/VivadoProjects/ALU/ALU.runs/ALU_decode138_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ALU_two_4_input_nand_gate_0_0_synth_1" LaunchDir="E:/VivadoProjects/ALU/ALU.runs/ALU_two_4_input_nand_gate_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ALU_two_4_input_nand_gate_1_1_synth_1" LaunchDir="E:/VivadoProjects/ALU/ALU.runs/ALU_two_4_input_nand_gate_1_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ALU_HIGH_0_0_synth_1" LaunchDir="E:/VivadoProjects/ALU/ALU.runs/ALU_HIGH_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ALU_GROUND_0_0_synth_1" LaunchDir="E:/VivadoProjects/ALU/ALU.runs/ALU_GROUND_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ALU_four_2_input_nand_gate_0_0_synth_1" LaunchDir="E:/VivadoProjects/ALU/ALU.runs/ALU_four_2_input_nand_gate_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ALU_four_2_input_and_gate_0_0_synth_1" LaunchDir="E:/VivadoProjects/ALU/ALU.runs/ALU_four_2_input_and_gate_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ALU_four_2_input_or_gate_0_0_synth_1" LaunchDir="E:/VivadoProjects/ALU/ALU.runs/ALU_four_2_input_or_gate_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ALU_GROUND_1_0_synth_1" LaunchDir="E:/VivadoProjects/ALU/ALU.runs/ALU_GROUND_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ALU_XOR_0_0_synth_1" LaunchDir="E:/VivadoProjects/ALU/ALU.runs/ALU_XOR_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_2" LaunchDir="E:/VivadoProjects/ALU/ALU.runs/synth_2" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ALU_mux_8_to_1_0_0_synth_1"/>
+		<Parent Id="ALU_mux_8_to_1_1_0_synth_1"/>
+		<Parent Id="ALU_decode138_0_0_synth_1"/>
+		<Parent Id="ALU_decode138_1_0_synth_1"/>
+		<Parent Id="ALU_two_4_input_nand_gate_0_0_synth_1"/>
+		<Parent Id="ALU_two_4_input_nand_gate_1_1_synth_1"/>
+		<Parent Id="ALU_HIGH_0_0_synth_1"/>
+		<Parent Id="ALU_GROUND_0_0_synth_1"/>
+		<Parent Id="ALU_four_2_input_nand_gate_0_0_synth_1"/>
+		<Parent Id="ALU_four_2_input_and_gate_0_0_synth_1"/>
+		<Parent Id="ALU_four_2_input_or_gate_0_0_synth_1"/>
+		<Parent Id="ALU_GROUND_1_0_synth_1"/>
+		<Parent Id="ALU_XOR_0_0_synth_1"/>
+	</Run>
+</Runs>
+

@@ -1,0 +1,404 @@
+
+*** Running vivado
+    with args -log calculator_12.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source calculator_12.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source calculator_12.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Lenovo/Desktop/74IP'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Lenovo/Desktop/74IP/xup_clk_div_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2017.2/data/ip'.
+add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:01:38 . Memory (MB): peak = 239.242 ; gain = 16.051
+Command: synth_design -top calculator_12 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7244 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 327.965 ; gain = 71.957
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'calculator_12' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.srcs/sources_1/bd/calculator_12/hdl/calculator_12.v:13]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_Ground_0_0' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_Ground_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_Ground_0_0' (1#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_Ground_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_HIGH_0_0' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_HIGH_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_HIGH_0_0' (2#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_HIGH_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_HIGH_1_0' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_HIGH_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_HIGH_1_0' (3#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_HIGH_1_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_NOT_0_0' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_NOT_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_NOT_0_0' (4#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_NOT_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_NOT_1_0' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_NOT_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_NOT_1_0' (5#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_NOT_1_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_NOT_2_0' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_NOT_2_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_NOT_2_0' (6#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_NOT_2_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_NOT_3_0' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_NOT_3_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_NOT_3_0' (7#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_NOT_3_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_OR_0_1' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_OR_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_OR_0_1' (8#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_OR_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_OR_1_0' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_OR_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_OR_1_0' (9#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_OR_1_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_bcdchange_1_1' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_bcdchange_1_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_bcdchange_1_1' (10#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_bcdchange_1_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_calcaulator_0_0' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_calcaulator_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_calcaulator_0_0' (11#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_calcaulator_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_clk_div_0_0' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_clk_div_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_clk_div_0_0' (12#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_clk_div_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_clk_div_1_0' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_clk_div_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_clk_div_1_0' (13#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_clk_div_1_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_decimal_counter_0_0' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_decimal_counter_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_decimal_counter_0_0' (14#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_decimal_counter_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'decimal_counter_0' of module 'calculator_12_decimal_counter_0_0' requires 10 connections, but only 7 given [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.srcs/sources_1/bd/calculator_12/hdl/calculator_12.v:138]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_four_2_input_and_gate_0_0' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_four_2_input_and_gate_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_four_2_input_and_gate_0_0' (15#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_four_2_input_and_gate_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_mux_8_to_1_0_0' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_mux_8_to_1_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_mux_8_to_1_0_0' (16#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_mux_8_to_1_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'mux_8_to_1_0' of module 'calculator_12_mux_8_to_1_0_0' requires 14 connections, but only 13 given [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.srcs/sources_1/bd/calculator_12/hdl/calculator_12.v:159]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_mux_8_to_1_1_0' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_mux_8_to_1_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_mux_8_to_1_1_0' (17#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_mux_8_to_1_1_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'mux_8_to_1_1' of module 'calculator_12_mux_8_to_1_1_0' requires 14 connections, but only 13 given [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.srcs/sources_1/bd/calculator_12/hdl/calculator_12.v:173]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_mux_8_to_1_1_1' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_mux_8_to_1_1_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_mux_8_to_1_1_1' (18#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_mux_8_to_1_1_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'mux_8_to_1_2' of module 'calculator_12_mux_8_to_1_1_1' requires 14 connections, but only 13 given [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.srcs/sources_1/bd/calculator_12/hdl/calculator_12.v:187]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_mux_8_to_1_1_2' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_mux_8_to_1_1_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_mux_8_to_1_1_2' (19#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_mux_8_to_1_1_2_stub.v:6]
+WARNING: [Synth 8-350] instance 'mux_8_to_1_3' of module 'calculator_12_mux_8_to_1_1_2' requires 14 connections, but only 13 given [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.srcs/sources_1/bd/calculator_12/hdl/calculator_12.v:201]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_three_and_0_0' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_three_and_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_three_and_0_0' (20#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_three_and_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'calculator_12_turn_3_0_0' [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_turn_3_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12_turn_3_0_0' (21#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/realtime/calculator_12_turn_3_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'calculator_12' (22#1) [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.srcs/sources_1/bd/calculator_12/hdl/calculator_12.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 368.043 ; gain = 112.035
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 368.043 ; gain = 112.035
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp43/calculator_12_calcaulator_0_0_in_context.xdc] for cell 'calcaulator_0'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp43/calculator_12_calcaulator_0_0_in_context.xdc] for cell 'calcaulator_0'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp45/calculator_12_clk_div_0_0_in_context.xdc] for cell 'clk_div_0'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp45/calculator_12_clk_div_0_0_in_context.xdc] for cell 'clk_div_0'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp47/calculator_12_Ground_0_0_in_context.xdc] for cell 'Ground_0'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp47/calculator_12_Ground_0_0_in_context.xdc] for cell 'Ground_0'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp49/calculator_12_turn_3_0_0_in_context.xdc] for cell 'turn_3_0'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp49/calculator_12_turn_3_0_0_in_context.xdc] for cell 'turn_3_0'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp51/calculator_12_four_2_input_and_gate_0_0_in_context.xdc] for cell 'four_2_input_and_gate_0'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp51/calculator_12_four_2_input_and_gate_0_0_in_context.xdc] for cell 'four_2_input_and_gate_0'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp53/calculator_12_OR_1_0_in_context.xdc] for cell 'OR_1'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp53/calculator_12_OR_1_0_in_context.xdc] for cell 'OR_1'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp55/calculator_12_OR_0_1_in_context.xdc] for cell 'OR_0'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp55/calculator_12_OR_0_1_in_context.xdc] for cell 'OR_0'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp57/calculator_12_NOT_0_0_in_context.xdc] for cell 'NOT_0'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp57/calculator_12_NOT_0_0_in_context.xdc] for cell 'NOT_0'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp59/calculator_12_three_and_0_0_in_context.xdc] for cell 'three_and_0'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp59/calculator_12_three_and_0_0_in_context.xdc] for cell 'three_and_0'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp61/calculator_12_NOT_1_0_in_context.xdc] for cell 'NOT_1'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp61/calculator_12_NOT_1_0_in_context.xdc] for cell 'NOT_1'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp63/calculator_12_NOT_2_0_in_context.xdc] for cell 'NOT_2'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp63/calculator_12_NOT_2_0_in_context.xdc] for cell 'NOT_2'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp65/calculator_12_mux_8_to_1_1_0_in_context.xdc] for cell 'mux_8_to_1_0'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp65/calculator_12_mux_8_to_1_1_0_in_context.xdc] for cell 'mux_8_to_1_0'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp67/calculator_12_decimal_counter_0_0_in_context.xdc] for cell 'decimal_counter_0'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp67/calculator_12_decimal_counter_0_0_in_context.xdc] for cell 'decimal_counter_0'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp69/calculator_12_clk_div_1_0_in_context.xdc] for cell 'clk_div_1'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp69/calculator_12_clk_div_1_0_in_context.xdc] for cell 'clk_div_1'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp71/calculator_12_mux_8_to_1_1_0_in_context.xdc] for cell 'mux_8_to_1_1'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp71/calculator_12_mux_8_to_1_1_0_in_context.xdc] for cell 'mux_8_to_1_1'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp73/calculator_12_mux_8_to_1_1_0_in_context.xdc] for cell 'mux_8_to_1_2'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp73/calculator_12_mux_8_to_1_1_0_in_context.xdc] for cell 'mux_8_to_1_2'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp75/calculator_12_mux_8_to_1_1_0_in_context.xdc] for cell 'mux_8_to_1_3'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp75/calculator_12_mux_8_to_1_1_0_in_context.xdc] for cell 'mux_8_to_1_3'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp77/calculator_12_bcdchange_1_1_in_context.xdc] for cell 'bcdchange_1'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp77/calculator_12_bcdchange_1_1_in_context.xdc] for cell 'bcdchange_1'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp79/calculator_12_HIGH_0_0_in_context.xdc] for cell 'HIGH_0'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp79/calculator_12_HIGH_0_0_in_context.xdc] for cell 'HIGH_0'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp81/calculator_12_HIGH_1_0_in_context.xdc] for cell 'HIGH_1'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp81/calculator_12_HIGH_1_0_in_context.xdc] for cell 'HIGH_1'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp83/calculator_12_NOT_3_0_in_context.xdc] for cell 'NOT_3'
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/.Xil/Vivado-12844-LAPTOP-BBTT6KDL/dcp83/calculator_12_NOT_3_0_in_context.xdc] for cell 'NOT_3'
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.srcs/constrs_1/new/sc.xdc]
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.srcs/constrs_1/new/sc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.srcs/constrs_1/new/sc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/calculator_12_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/calculator_12_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 623.727 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 623.727 ; gain = 367.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 623.727 ; gain = 367.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for Ground_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for HIGH_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for HIGH_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for NOT_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for NOT_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for NOT_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for NOT_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for OR_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for OR_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bcdchange_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for calcaulator_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_div_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_div_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for decimal_counter_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for four_2_input_and_gate_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mux_8_to_1_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mux_8_to_1_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mux_8_to_1_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mux_8_to_1_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for three_and_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for turn_3_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 623.727 ; gain = 367.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 623.727 ; gain = 367.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 623.727 ; gain = 367.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 623.727 ; gain = 367.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 623.727 ; gain = 367.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 627.426 ; gain = 371.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 627.426 ; gain = 371.418
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 627.426 ; gain = 371.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 627.426 ; gain = 371.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 627.426 ; gain = 371.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 627.426 ; gain = 371.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 627.426 ; gain = 371.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------------+----------+
+|      |BlackBox name                           |Instances |
++------+----------------------------------------+----------+
+|1     |calculator_12_Ground_0_0                |         1|
+|2     |calculator_12_HIGH_0_0                  |         1|
+|3     |calculator_12_HIGH_1_0                  |         1|
+|4     |calculator_12_NOT_0_0                   |         1|
+|5     |calculator_12_NOT_1_0                   |         1|
+|6     |calculator_12_NOT_2_0                   |         1|
+|7     |calculator_12_NOT_3_0                   |         1|
+|8     |calculator_12_OR_0_1                    |         1|
+|9     |calculator_12_OR_1_0                    |         1|
+|10    |calculator_12_bcdchange_1_1             |         1|
+|11    |calculator_12_calcaulator_0_0           |         1|
+|12    |calculator_12_clk_div_0_0               |         1|
+|13    |calculator_12_clk_div_1_0               |         1|
+|14    |calculator_12_decimal_counter_0_0       |         1|
+|15    |calculator_12_four_2_input_and_gate_0_0 |         1|
+|16    |calculator_12_mux_8_to_1_0_0            |         1|
+|17    |calculator_12_mux_8_to_1_1_0            |         1|
+|18    |calculator_12_mux_8_to_1_1_1            |         1|
+|19    |calculator_12_mux_8_to_1_1_2            |         1|
+|20    |calculator_12_three_and_0_0             |         1|
+|21    |calculator_12_turn_3_0_0                |         1|
++------+----------------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------------+------+
+|      |Cell                                    |Count |
++------+----------------------------------------+------+
+|1     |calculator_12_Ground_0_0                |     1|
+|2     |calculator_12_HIGH_0_0                  |     1|
+|3     |calculator_12_HIGH_1_0                  |     1|
+|4     |calculator_12_NOT_0_0                   |     1|
+|5     |calculator_12_NOT_1_0                   |     1|
+|6     |calculator_12_NOT_2_0                   |     1|
+|7     |calculator_12_NOT_3_0                   |     1|
+|8     |calculator_12_OR_0_1                    |     1|
+|9     |calculator_12_OR_1_0                    |     1|
+|10    |calculator_12_bcdchange_1_1             |     1|
+|11    |calculator_12_calcaulator_0_0           |     1|
+|12    |calculator_12_clk_div_0_0               |     1|
+|13    |calculator_12_clk_div_1_0               |     1|
+|14    |calculator_12_decimal_counter_0_0       |     1|
+|15    |calculator_12_four_2_input_and_gate_0_0 |     1|
+|16    |calculator_12_mux_8_to_1_0_0            |     1|
+|17    |calculator_12_mux_8_to_1_1_0            |     1|
+|18    |calculator_12_mux_8_to_1_1_1            |     1|
+|19    |calculator_12_mux_8_to_1_1_2            |     1|
+|20    |calculator_12_three_and_0_0             |     1|
+|21    |calculator_12_turn_3_0_0                |     1|
+|22    |IBUF                                    |     2|
+|23    |OBUF                                    |    11|
++------+----------------------------------------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    56|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 627.426 ; gain = 371.418
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 627.426 ; gain = 115.734
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 627.426 ; gain = 371.418
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+58 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:45 . Memory (MB): peak = 638.949 ; gain = 399.707
+INFO: [Common 17-1381] The checkpoint 'E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/synth_1/calculator_12.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 638.949 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 10 20:55:20 2017...

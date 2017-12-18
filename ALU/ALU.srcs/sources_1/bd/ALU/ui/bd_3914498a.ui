@@ -1,0 +1,60 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port A -pg 1 -y -520 -defaultsOSRD
+preplace port B -pg 1 -y -500 -defaultsOSRD
+preplace port Q0 -pg 1 -y -30 -defaultsOSRD
+preplace port C -pg 1 -y -480 -defaultsOSRD
+preplace port Q1 -pg 1 -y -10 -defaultsOSRD
+preplace port S0 -pg 1 -y -60 -defaultsOSRD
+preplace port S1 -pg 1 -y -80 -defaultsOSRD
+preplace port S2 -pg 1 -y -100 -defaultsOSRD
+preplace inst HIGH_0 -pg 1 -lvl 3 -y -620 -defaultsOSRD
+preplace inst four_2_input_or_gate_0 -pg 1 -lvl 3 -y 60 -defaultsOSRD
+preplace inst four_2_input_nand_gate_0 -pg 1 -lvl 2 -y -240 -defaultsOSRD
+preplace inst four_2_input_nand_gate_1 -pg 1 -lvl 5 -y 80 -defaultsOSRD
+preplace inst two_4_input_nand_gate_0 -pg 1 -lvl 6 -y -500 -defaultsOSRD
+preplace inst two_4_input_nand_gate_1 -pg 1 -lvl 8 -y -480 -defaultsOSRD
+preplace inst XOR_0 -pg 1 -lvl 1 -y -620 -defaultsOSRD
+preplace inst GROUND_0 -pg 1 -lvl 2 -y -620 -defaultsOSRD
+preplace inst four_2_input_and_gate_0 -pg 1 -lvl 3 -y -240 -defaultsOSRD
+preplace inst mux_8_to_1_0 -pg 1 -lvl 6 -y 0 -defaultsOSRD
+preplace inst mux_8_to_1_1 -pg 1 -lvl 4 -y -10 -defaultsOSRD
+preplace inst decode138_0 -pg 1 -lvl 7 -y -490 -defaultsOSRD
+preplace inst decode138_1 -pg 1 -lvl 4 -y -470 -defaultsOSRD
+preplace netloc A_1 1 0 7 -80J -520 130J -480 340J -480 680J -590 NJ -590 1220 -650 1480
+preplace netloc four_2_input_nand_gate_0_Y1 1 2 2 360J -370 700
+preplace netloc four_2_input_or_gate_0_Y1 1 3 1 670
+preplace netloc two_4_input_nand_gate_1_Y2 1 5 4 1240J -640 NJ -640 NJ -640 1910
+preplace netloc decode138_0_Y7_n 1 7 1 1710
+preplace netloc decode138_0_Y2_n 1 7 1 1700
+preplace netloc decode138_1_Y2_n 1 4 2 950 -550 N
+preplace netloc four_2_input_nand_gate_0_Y2 1 2 2 370J -360 690
+preplace netloc four_2_input_nand_gate_1_Y1 1 5 1 1230
+preplace netloc Q0 1 4 5 960J -160 NJ -160 NJ -160 NJ -160 1920
+preplace netloc Q1 1 6 3 NJ -10 NJ -10 N
+preplace netloc decode138_1_Y7_n 1 4 2 990 -430 1220
+preplace netloc two_4_input_nand_gate_0_Y1 1 3 4 770J -670 NJ -670 N -670 1460
+preplace netloc decode138_1_Y6_n 1 4 2 980 -450 N
+preplace netloc decode138_1_Y5_n 1 4 2 970 -470 N
+preplace netloc four_2_input_and_gate_0_Y1 1 3 1 680
+preplace netloc two_4_input_nand_gate_0_Y2 1 5 2 1250 -630 1450
+preplace netloc decode138_1_Y4_n 1 4 2 960 -530 N
+preplace netloc B_1 1 0 7 -90J -510 140J -510 350J -510 760J -690 NJ -690 N -690 1500
+preplace netloc HIGH_0_o 1 3 4 750J -620 NJ -620 NJ -620 1470J
+preplace netloc decode138_0_Y1_n 1 7 1 1690
+preplace netloc S0 1 0 6 NJ -60 NJ -60 NJ -60 760 -170 NJ -170 1200J
+preplace netloc decode138_0_Y4_n 1 7 1 1680
+preplace netloc XOR_0_o 1 1 3 130J -690 NJ -690 720
+preplace netloc S1 1 0 6 NJ -80 NJ -80 NJ -80 730 -180 NJ -180 1210J
+preplace netloc decode138_1_Y1_n 1 4 2 940 -570 N
+preplace netloc C_1 1 0 7 -80J -500 NJ -500 NJ -500 670J -680 NJ -680 N -680 1490
+preplace netloc S2 1 0 6 NJ -100 NJ -100 NJ -100 710 -190 NJ -190 1230J
+preplace netloc GROUND_0_o 1 2 5 340J -710 740J -200 NJ -200 1220 -200 1480
+preplace netloc two_4_input_nand_gate_1_Y1 1 3 6 780J -660 NJ -660 NJ -660 NJ -660 NJ -660 1920
+preplace netloc decode138_0_Y3_n 1 7 1 1670
+preplace netloc decode138_1_Y3_n 1 4 2 970 -490 N
+levelinfo -pg 1 -110 30 240 570 860 1100 1350 1590 1810 1940 -top -1180 -bot 400
+",
+}
+0

@@ -1,0 +1,1520 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Dec 17 13:41:06 2017" VIVADOVERSION="2017.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="final_clock" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="sign" SIGIS="undef" SIGNAME="External_Ports_sign">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="two_clk_0" PORT="sign"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_div_0" PORT="clk_in"/>
+        <CONNECTION INSTANCE="clk_div_1" PORT="clk_in"/>
+        <CONNECTION INSTANCE="clk_div_2" PORT="clk_in"/>
+        <CONNECTION INSTANCE="clk_div_3" PORT="clk_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="a" SIGIS="undef" SIGNAME="bcdTo7seg_0_a">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdTo7seg_0" PORT="a"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="b" SIGIS="undef" SIGNAME="bcdTo7seg_0_b">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdTo7seg_0" PORT="b"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="c" SIGIS="undef" SIGNAME="bcdTo7seg_0_c">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdTo7seg_0" PORT="c"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="d" SIGIS="undef" SIGNAME="bcdTo7seg_0_d">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdTo7seg_0" PORT="d"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="e" SIGIS="undef" SIGNAME="bcdTo7seg_0_e">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdTo7seg_0" PORT="e"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="f" SIGIS="undef" SIGNAME="bcdTo7seg_0_f">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdTo7seg_0" PORT="f"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="bcdTo7seg_0_g">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcdTo7seg_0" PORT="g"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AN0" SIGIS="undef" SIGNAME="OR_0_o0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="OR_0" PORT="o0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AN1" SIGIS="undef" SIGNAME="OR_0_o1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="OR_0" PORT="o1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AN2" SIGIS="undef" SIGNAME="OR_0_o2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="OR_0" PORT="o2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AN3" SIGIS="undef" SIGNAME="OR_0_o3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="OR_0" PORT="o3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="mode" SIGIS="clk" SIGNAME="External_Ports_mode">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="steper_3_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="State" SIGIS="undef" SIGNAME="External_Ports_State">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="steper_1" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="S1" SIGIS="undef" SIGNAME="tran_2_2_Q1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="tran_2_2" PORT="Q1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="S2" SIGIS="undef" SIGNAME="tran_2_2_Q2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="tran_2_2" PORT="Q2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Q1" SIGIS="undef" SIGNAME="tran_2_1_Q1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="tran_2_1" PORT="Q1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Q2" SIGIS="undef" SIGNAME="tran_2_1_Q2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="tran_2_1" PORT="Q2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="click" SIGIS="undef" SIGNAME="External_Ports_click">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_chooser_0" PORT="click"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/Ground_0" HWVERSION="1.0" INSTANCE="Ground_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Ground" VLNV="xilinx.com:module_ref:Ground:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_Ground_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="o" SIGIS="undef" SIGNAME="Ground_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decode138_0" PORT="A2"/>
+            <CONNECTION INSTANCE="decode138_0" PORT="E2_n"/>
+            <CONNECTION INSTANCE="decode138_0" PORT="E3_n"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/Ground_1" HWVERSION="1.0" INSTANCE="Ground_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Ground" VLNV="xilinx.com:module_ref:Ground:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_Ground_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="o" SIGIS="undef" SIGNAME="Ground_1_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="select_153_0" PORT="i0_0"/>
+            <CONNECTION INSTANCE="select_153_0" PORT="i0_2"/>
+            <CONNECTION INSTANCE="select_153_0" PORT="i1_0"/>
+            <CONNECTION INSTANCE="select_153_0" PORT="i1_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/Ground_2" HWVERSION="1.0" INSTANCE="Ground_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Ground" VLNV="xilinx.com:module_ref:Ground:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_Ground_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="o" SIGIS="undef" SIGNAME="Ground_2_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decode138_1" PORT="E2_n"/>
+            <CONNECTION INSTANCE="decode138_1" PORT="E3_n"/>
+            <CONNECTION INSTANCE="decode138_1" PORT="A2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/HIGH_0" HWVERSION="1.0" INSTANCE="HIGH_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="HIGH" VLNV="xilinx.com:module_ref:HIGH:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_HIGH_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="o" SIGIS="undef" SIGNAME="HIGH_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decode138_1" PORT="E1"/>
+            <CONNECTION INSTANCE="sec_generator_0" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/HIGH_1" HWVERSION="1.0" INSTANCE="HIGH_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="HIGH" VLNV="xilinx.com:module_ref:HIGH:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_HIGH_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="o" SIGIS="undef" SIGNAME="HIGH_1_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decode138_0" PORT="E1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/OR_0" HWVERSION="1.0" INSTANCE="OR_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="OR" VLNV="xilinx.com:module_ref:OR:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_OR_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="In0_0" SIGIS="undef" SIGNAME="decode138_0_Y0_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decode138_0" PORT="Y0_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In0_1" SIGIS="undef" SIGNAME="turn_3_0_o1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_3_0" PORT="o1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In1_0" SIGIS="undef" SIGNAME="decode138_0_Y1_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decode138_0" PORT="Y1_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In1_1" SIGIS="undef" SIGNAME="turn_3_0_o1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_3_0" PORT="o1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In2_0" SIGIS="undef" SIGNAME="decode138_0_Y2_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decode138_0" PORT="Y2_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In2_1" SIGIS="undef" SIGNAME="turn_3_0_o0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_3_0" PORT="o0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In3_0" SIGIS="undef" SIGNAME="decode138_0_Y3_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decode138_0" PORT="Y3_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In3_1" SIGIS="undef" SIGNAME="turn_3_0_o0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_3_0" PORT="o0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o0" SIGIS="undef" SIGNAME="OR_0_o0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o1" SIGIS="undef" SIGNAME="OR_0_o1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o2" SIGIS="undef" SIGNAME="OR_0_o2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o3" SIGIS="undef" SIGNAME="OR_0_o3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/alink_0" HWVERSION="1.0" INSTANCE="alink_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="alink" VLNV="xilinx.com:module_ref:alink:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_alink_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="clk_div_3_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_div_3" PORT="clk_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="state" SIGIS="undef" SIGNAME="alink_0_state">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="select_153_0" PORT="i0_1"/>
+            <CONNECTION INSTANCE="select_153_0" PORT="i1_2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/bcdTo7seg_0" HWVERSION="1.0" INSTANCE="bcdTo7seg_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="bcdTo7seg" VLNV="xilinx.com:module_ref:bcdTo7seg:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_bcdTo7seg_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="t0" SIGIS="undef" SIGNAME="turn_4_0_x0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_4_0" PORT="x0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="t1" SIGIS="undef" SIGNAME="turn_4_0_x1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_4_0" PORT="x1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="t2" SIGIS="undef" SIGNAME="turn_4_0_x2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_4_0" PORT="x2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="t3" SIGIS="undef" SIGNAME="turn_4_0_x3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_4_0" PORT="x3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a" SIGIS="undef" SIGNAME="bcdTo7seg_0_a">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="b" SIGIS="undef" SIGNAME="bcdTo7seg_0_b">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c" SIGIS="undef" SIGNAME="bcdTo7seg_0_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="c"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="d" SIGIS="undef" SIGNAME="bcdTo7seg_0_d">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="d"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="e" SIGIS="undef" SIGNAME="bcdTo7seg_0_e">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="e"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="f" SIGIS="undef" SIGNAME="bcdTo7seg_0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="bcdTo7seg_0_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/clk_div_0" HWVERSION="1.0" INSTANCE="clk_div_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_div" VLNV="xilinx.com:xup:clk_div:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="N" VALUE="10000"/>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_clk_div_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_in" SIGIS="undef" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_out" SIGIS="undef" SIGNAME="clk_div_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="two_clk_0" PORT="clk1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/clk_div_1" HWVERSION="1.0" INSTANCE="clk_div_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_div" VLNV="xilinx.com:xup:clk_div:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="N" VALUE="100000000"/>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_clk_div_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_in" SIGIS="undef" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_out" SIGIS="undef" SIGNAME="clk_div_1_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="two_clk_0" PORT="clk2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/clk_div_2" HWVERSION="1.0" INSTANCE="clk_div_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_div" VLNV="xilinx.com:xup:clk_div:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="N" VALUE="10000"/>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_clk_div_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_in" SIGIS="undef" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_out" SIGIS="undef" SIGNAME="clk_div_2_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="steper_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/clk_div_3" HWVERSION="1.0" INSTANCE="clk_div_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_div" VLNV="xilinx.com:xup:clk_div:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="N" VALUE="20000000"/>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_clk_div_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_in" SIGIS="undef" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_out" SIGIS="undef" SIGNAME="clk_div_3_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="alink_0" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/clock_chooser_0" HWVERSION="1.0" INSTANCE="clock_chooser_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_chooser" VLNV="xilinx.com:module_ref:clock_chooser:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_clock_chooser_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="click" SIGIS="undef" SIGNAME="External_Ports_click">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="click"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mo_0" SIGIS="undef" SIGNAME="tran_2_1_Q1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_1" PORT="Q1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mo_1" SIGIS="undef" SIGNAME="tran_2_1_Q2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_1" PORT="Q2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="two_clk_0_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="two_clk_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Y0" SIGIS="undef" SIGNAME="decode138_1_Y0_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decode138_1" PORT="Y0_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Y1" SIGIS="undef" SIGNAME="decode138_1_Y1_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decode138_1" PORT="Y1_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Y2" SIGIS="undef" SIGNAME="decode138_1_Y2_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decode138_1" PORT="Y2_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Y3" SIGIS="undef" SIGNAME="decode138_1_Y3_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decode138_1" PORT="Y3_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="sec_clk" SIGIS="clk" SIGNAME="clock_chooser_0_sec_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sec_generator_0" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="min_clk" SIGIS="clk" SIGNAME="clock_chooser_0_min_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="min_generator_0" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="hour_clk" SIGIS="clk" SIGNAME="clock_chooser_0_hour_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hour_generator_0" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="day_clk" SIGIS="clk" SIGNAME="clock_chooser_0_day_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="day_generator_0" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="mon_clk" SIGIS="clk" SIGNAME="clock_chooser_0_mon_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mon_generator_0" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="year_clk" SIGIS="clk" SIGNAME="clock_chooser_0_year_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="year_generator_0" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/data_chooser_0" HWVERSION="1.0" INSTANCE="data_chooser_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="data_chooser" VLNV="xilinx.com:module_ref:data_chooser:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_data_chooser_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in0" SIGIS="undef" SIGNAME="tran_2_2_Q1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_2" PORT="Q1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in1" SIGIS="undef" SIGNAME="tran_2_2_Q2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_2" PORT="Q2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar0" RIGHT="0" SIGIS="undef" SIGNAME="sec_generator_0_sec_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sec_generator_0" PORT="sec_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar1" RIGHT="0" SIGIS="undef" SIGNAME="min_generator_0_min_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="min_generator_0" PORT="min_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar2" RIGHT="0" SIGIS="undef" SIGNAME="day_generator_0_day_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="day_generator_0" PORT="day_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar3" RIGHT="0" SIGIS="undef" SIGNAME="year_generator_0_year_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="year_generator_0" PORT="year_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Y" RIGHT="0" SIGIS="undef" SIGNAME="data_chooser_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_4" PORT="ar0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/data_chooser_1" HWVERSION="1.0" INSTANCE="data_chooser_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="data_chooser" VLNV="xilinx.com:module_ref:data_chooser:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_data_chooser_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in0" SIGIS="undef" SIGNAME="tran_2_2_Q1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_2" PORT="Q1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in1" SIGIS="undef" SIGNAME="tran_2_2_Q2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_2" PORT="Q2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar0" RIGHT="0" SIGIS="undef" SIGNAME="sec_generator_0_sec_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sec_generator_0" PORT="sec_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar1" RIGHT="0" SIGIS="undef" SIGNAME="min_generator_0_min_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="min_generator_0" PORT="min_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar2" RIGHT="0" SIGIS="undef" SIGNAME="day_generator_0_day_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="day_generator_0" PORT="day_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar3" RIGHT="0" SIGIS="undef" SIGNAME="year_generator_0_year_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="year_generator_0" PORT="year_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Y" RIGHT="0" SIGIS="undef" SIGNAME="data_chooser_1_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_4" PORT="ar1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/data_chooser_2" HWVERSION="1.0" INSTANCE="data_chooser_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="data_chooser" VLNV="xilinx.com:module_ref:data_chooser:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_data_chooser_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in0" SIGIS="undef" SIGNAME="tran_2_2_Q1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_2" PORT="Q1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in1" SIGIS="undef" SIGNAME="tran_2_2_Q2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_2" PORT="Q2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar0" RIGHT="0" SIGIS="undef" SIGNAME="min_generator_0_min_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="min_generator_0" PORT="min_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar1" RIGHT="0" SIGIS="undef" SIGNAME="hour_generator_0_hour_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hour_generator_0" PORT="hour_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar2" RIGHT="0" SIGIS="undef" SIGNAME="mon_generator_0_mon_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mon_generator_0" PORT="mon_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar3" RIGHT="0" SIGIS="undef" SIGNAME="year_generator_0_year_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="year_generator_0" PORT="year_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Y" RIGHT="0" SIGIS="undef" SIGNAME="data_chooser_2_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_4" PORT="ar2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/data_chooser_3" HWVERSION="1.0" INSTANCE="data_chooser_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="data_chooser" VLNV="xilinx.com:module_ref:data_chooser:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_data_chooser_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in0" SIGIS="undef" SIGNAME="tran_2_2_Q1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_2" PORT="Q1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in1" SIGIS="undef" SIGNAME="tran_2_2_Q2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_2" PORT="Q2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar0" RIGHT="0" SIGIS="undef" SIGNAME="min_generator_0_min_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="min_generator_0" PORT="min_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar1" RIGHT="0" SIGIS="undef" SIGNAME="hour_generator_0_hour_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hour_generator_0" PORT="hour_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar2" RIGHT="0" SIGIS="undef" SIGNAME="mon_generator_0_mon_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mon_generator_0" PORT="mon_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar3" RIGHT="0" SIGIS="undef" SIGNAME="year_generator_0_year_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="year_generator_0" PORT="year_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Y" RIGHT="0" SIGIS="undef" SIGNAME="data_chooser_3_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_4" PORT="ar3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/data_chooser_4" HWVERSION="1.0" INSTANCE="data_chooser_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="data_chooser" VLNV="xilinx.com:module_ref:data_chooser:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_data_chooser_4_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in0" SIGIS="undef" SIGNAME="tran_2_0_Q1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_0" PORT="Q1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in1" SIGIS="undef" SIGNAME="tran_2_0_Q2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_0" PORT="Q2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar0" RIGHT="0" SIGIS="undef" SIGNAME="data_chooser_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_0" PORT="Y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar1" RIGHT="0" SIGIS="undef" SIGNAME="data_chooser_1_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_1" PORT="Y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar2" RIGHT="0" SIGIS="undef" SIGNAME="data_chooser_2_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_2" PORT="Y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ar3" RIGHT="0" SIGIS="undef" SIGNAME="data_chooser_3_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_3" PORT="Y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Y" RIGHT="0" SIGIS="undef" SIGNAME="data_chooser_4_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_4_0" PORT="In"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/day_generator_0" HWVERSION="1.0" INSTANCE="day_generator_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="day_generator" VLNV="xilinx.com:module_ref:day_generator:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_day_generator_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="clock_chooser_0_day_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_chooser_0" PORT="day_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="five_or_0_Y2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="five_or_0" PORT="Y2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="day_0" RIGHT="0" SIGIS="undef" SIGNAME="day_generator_0_day_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_0" PORT="ar2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="day_1" RIGHT="0" SIGIS="undef" SIGNAME="day_generator_0_day_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_1" PORT="ar2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rco" SIGIS="undef" SIGNAME="day_generator_0_rco">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="five_or_0" PORT="i3_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/decode138_0" HWVERSION="1.0" INSTANCE="decode138_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="decode138" VLNV="xilinx.com:XUP:decode138:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_decode138_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="tran_2_0_Q1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_0" PORT="Q1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="tran_2_0_Q2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_0" PORT="Q2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="Ground_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Ground_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="E1" SIGIS="undef" SIGNAME="HIGH_1_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HIGH_1" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="E2_n" SIGIS="undef" SIGNAME="Ground_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Ground_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="E3_n" SIGIS="undef" SIGNAME="Ground_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Ground_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y0_n" SIGIS="undef" SIGNAME="decode138_0_Y0_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="OR_0" PORT="In0_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y1_n" SIGIS="undef" SIGNAME="decode138_0_Y1_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="OR_0" PORT="In1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y2_n" SIGIS="undef" SIGNAME="decode138_0_Y2_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="OR_0" PORT="In2_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y3_n" SIGIS="undef" SIGNAME="decode138_0_Y3_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="OR_0" PORT="In3_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y4_n" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Y5_n" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Y6_n" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Y7_n" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/decode138_1" HWVERSION="1.0" INSTANCE="decode138_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="decode138" VLNV="xilinx.com:XUP:decode138:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_decode138_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="tran_2_2_Q1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_2" PORT="Q1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="tran_2_2_Q2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_2" PORT="Q2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="Ground_2_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Ground_2" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="E1" SIGIS="undef" SIGNAME="HIGH_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HIGH_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="E2_n" SIGIS="undef" SIGNAME="Ground_2_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Ground_2" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="E3_n" SIGIS="undef" SIGNAME="Ground_2_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Ground_2" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y0_n" SIGIS="undef" SIGNAME="decode138_1_Y0_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_chooser_0" PORT="Y0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y1_n" SIGIS="undef" SIGNAME="decode138_1_Y1_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_chooser_0" PORT="Y1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y2_n" SIGIS="undef" SIGNAME="decode138_1_Y2_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_chooser_0" PORT="Y2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y3_n" SIGIS="undef" SIGNAME="decode138_1_Y3_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_chooser_0" PORT="Y3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y4_n" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Y5_n" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Y6_n" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Y7_n" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/five_or_0" HWVERSION="1.0" INSTANCE="five_or_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="five_or" VLNV="xilinx.com:module_ref:five_or:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_five_or_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="i0_0" SIGIS="undef" SIGNAME="one_or_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="one_or_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i0_1" SIGIS="undef" SIGNAME="sec_generator_0_rco">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sec_generator_0" PORT="rco"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i1_0" SIGIS="undef" SIGNAME="one_or_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="one_or_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i1_1" SIGIS="undef" SIGNAME="min_generator_0_rco">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="min_generator_0" PORT="rco"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i2_0" SIGIS="undef" SIGNAME="one_or_0_spc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="one_or_0" PORT="spc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i2_1" SIGIS="undef" SIGNAME="hour_generator_0_rco">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hour_generator_0" PORT="rco"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i3_0" SIGIS="undef" SIGNAME="one_or_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="one_or_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i3_1" SIGIS="undef" SIGNAME="day_generator_0_rco">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="day_generator_0" PORT="rco"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i4_0" SIGIS="undef" SIGNAME="one_or_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="one_or_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i4_1" SIGIS="undef" SIGNAME="mon_generator_0_rco">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mon_generator_0" PORT="rco"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y0" SIGIS="undef" SIGNAME="five_or_0_Y0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="min_generator_0" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y1" SIGIS="undef" SIGNAME="five_or_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hour_generator_0" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y2" SIGIS="undef" SIGNAME="five_or_0_Y2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="day_generator_0" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y3" SIGIS="undef" SIGNAME="five_or_0_Y3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mon_generator_0" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y4" SIGIS="undef" SIGNAME="five_or_0_Y4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="year_generator_0" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/hour_generator_0" HWVERSION="1.0" INSTANCE="hour_generator_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="hour_generator" VLNV="xilinx.com:module_ref:hour_generator:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_hour_generator_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="clock_chooser_0_hour_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_chooser_0" PORT="hour_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="five_or_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="five_or_0" PORT="Y1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="hour_0" RIGHT="0" SIGIS="undef" SIGNAME="hour_generator_0_hour_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_2" PORT="ar1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="hour_1" RIGHT="0" SIGIS="undef" SIGNAME="hour_generator_0_hour_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_3" PORT="ar1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rco" SIGIS="undef" SIGNAME="hour_generator_0_rco">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="five_or_0" PORT="i2_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/min_generator_0" HWVERSION="1.0" INSTANCE="min_generator_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="min_generator" VLNV="xilinx.com:module_ref:min_generator:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_min_generator_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="clock_chooser_0_min_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_chooser_0" PORT="min_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="five_or_0_Y0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="five_or_0" PORT="Y0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="min_0" RIGHT="0" SIGIS="undef" SIGNAME="min_generator_0_min_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_0" PORT="ar1"/>
+            <CONNECTION INSTANCE="data_chooser_2" PORT="ar0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="min_1" RIGHT="0" SIGIS="undef" SIGNAME="min_generator_0_min_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_1" PORT="ar1"/>
+            <CONNECTION INSTANCE="data_chooser_3" PORT="ar0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rco" SIGIS="undef" SIGNAME="min_generator_0_rco">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="five_or_0" PORT="i1_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/mon_generator_0" HWVERSION="1.0" INSTANCE="mon_generator_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mon_generator" VLNV="xilinx.com:module_ref:mon_generator:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_mon_generator_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="clock_chooser_0_mon_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_chooser_0" PORT="mon_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="five_or_0_Y3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="five_or_0" PORT="Y3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="mon_0" RIGHT="0" SIGIS="undef" SIGNAME="mon_generator_0_mon_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_2" PORT="ar2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="mon_1" RIGHT="0" SIGIS="undef" SIGNAME="mon_generator_0_mon_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_3" PORT="ar2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rco" SIGIS="undef" SIGNAME="mon_generator_0_rco">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="five_or_0" PORT="i4_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/one_or_0" HWVERSION="1.0" INSTANCE="one_or_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="one_or" VLNV="xilinx.com:module_ref:one_or:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_one_or_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="i0" SIGIS="undef" SIGNAME="tran_2_1_Q1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_1" PORT="Q1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i1" SIGIS="undef" SIGNAME="tran_2_1_Q2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_1" PORT="Q2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o" SIGIS="undef" SIGNAME="one_or_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="five_or_0" PORT="i0_0"/>
+            <CONNECTION INSTANCE="five_or_0" PORT="i1_0"/>
+            <CONNECTION INSTANCE="five_or_0" PORT="i3_0"/>
+            <CONNECTION INSTANCE="five_or_0" PORT="i4_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="spc" SIGIS="undef" SIGNAME="one_or_0_spc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="five_or_0" PORT="i2_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/sec_generator_0" HWVERSION="1.0" INSTANCE="sec_generator_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sec_generator" VLNV="xilinx.com:module_ref:sec_generator:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_sec_generator_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="clock_chooser_0_sec_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_chooser_0" PORT="sec_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="HIGH_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HIGH_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="sec_0" RIGHT="0" SIGIS="undef" SIGNAME="sec_generator_0_sec_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_0" PORT="ar0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="sec_1" RIGHT="0" SIGIS="undef" SIGNAME="sec_generator_0_sec_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_1" PORT="ar0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rco" SIGIS="undef" SIGNAME="sec_generator_0_rco">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="five_or_0" PORT="i0_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/select_153_0" HWVERSION="1.0" INSTANCE="select_153_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="select_153" VLNV="xilinx.com:module_ref:select_153:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_select_153_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="i0_0" SIGIS="undef" SIGNAME="Ground_1_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Ground_1" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i0_1" SIGIS="undef" SIGNAME="alink_0_state">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="alink_0" PORT="state"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i0_2" SIGIS="undef" SIGNAME="Ground_1_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Ground_1" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i0_3" SIGIS="undef"/>
+        <PORT DIR="I" NAME="i1_0" SIGIS="undef" SIGNAME="Ground_1_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Ground_1" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i1_1" SIGIS="undef" SIGNAME="Ground_1_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Ground_1" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i1_2" SIGIS="undef" SIGNAME="alink_0_state">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="alink_0" PORT="state"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i1_3" SIGIS="undef"/>
+        <PORT DIR="I" NAME="i2_0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="i2_1" SIGIS="undef"/>
+        <PORT DIR="I" NAME="i2_2" SIGIS="undef"/>
+        <PORT DIR="I" NAME="i2_3" SIGIS="undef"/>
+        <PORT DIR="I" NAME="i3_0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="i3_1" SIGIS="undef"/>
+        <PORT DIR="I" NAME="i3_2" SIGIS="undef"/>
+        <PORT DIR="I" NAME="i3_3" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="tran_2_1_Q1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_1" PORT="Q1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="tran_2_1_Q2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_1" PORT="Q2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Y" RIGHT="0" SIGIS="undef" SIGNAME="select_153_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="turn_3_0" PORT="in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/steper_0" HWVERSION="1.0" INSTANCE="steper_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="steper" VLNV="xilinx.com:module_ref:steper:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_steper_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_div_2_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_div_2" PORT="clk_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="Q" RIGHT="0" SIGIS="undef" SIGNAME="steper_0_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_0" PORT="in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/steper_1" HWVERSION="1.0" INSTANCE="steper_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="steper" VLNV="xilinx.com:module_ref:steper:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_steper_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_State">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="State"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="Q" RIGHT="0" SIGIS="undef" SIGNAME="steper_1_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_2" PORT="in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/steper_3_0" HWVERSION="1.0" INSTANCE="steper_3_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="steper_3" VLNV="xilinx.com:module_ref:steper_3:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_steper_3_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_mode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="o" RIGHT="0" SIGIS="undef" SIGNAME="steper_3_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tran_2_1" PORT="in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/tran_2_0" HWVERSION="1.0" INSTANCE="tran_2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="tran_2" VLNV="xilinx.com:module_ref:tran_2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_tran_2_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="1" NAME="in" RIGHT="0" SIGIS="undef" SIGNAME="steper_0_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="steper_0" PORT="Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q1" SIGIS="undef" SIGNAME="tran_2_0_Q1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decode138_0" PORT="A0"/>
+            <CONNECTION INSTANCE="data_chooser_4" PORT="in0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q2" SIGIS="undef" SIGNAME="tran_2_0_Q2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decode138_0" PORT="A1"/>
+            <CONNECTION INSTANCE="data_chooser_4" PORT="in1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/tran_2_1" HWVERSION="1.0" INSTANCE="tran_2_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="tran_2" VLNV="xilinx.com:module_ref:tran_2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_tran_2_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="1" NAME="in" RIGHT="0" SIGIS="undef" SIGNAME="steper_3_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="steper_3_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q1" SIGIS="undef" SIGNAME="tran_2_1_Q1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q1"/>
+            <CONNECTION INSTANCE="clock_chooser_0" PORT="mo_0"/>
+            <CONNECTION INSTANCE="one_or_0" PORT="i0"/>
+            <CONNECTION INSTANCE="select_153_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q2" SIGIS="undef" SIGNAME="tran_2_1_Q2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q2"/>
+            <CONNECTION INSTANCE="clock_chooser_0" PORT="mo_1"/>
+            <CONNECTION INSTANCE="one_or_0" PORT="i1"/>
+            <CONNECTION INSTANCE="select_153_0" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/tran_2_2" HWVERSION="1.0" INSTANCE="tran_2_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="tran_2" VLNV="xilinx.com:module_ref:tran_2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_tran_2_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="1" NAME="in" RIGHT="0" SIGIS="undef" SIGNAME="steper_1_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="steper_1" PORT="Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q1" SIGIS="undef" SIGNAME="tran_2_2_Q1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S1"/>
+            <CONNECTION INSTANCE="decode138_1" PORT="A0"/>
+            <CONNECTION INSTANCE="data_chooser_0" PORT="in0"/>
+            <CONNECTION INSTANCE="data_chooser_1" PORT="in0"/>
+            <CONNECTION INSTANCE="data_chooser_2" PORT="in0"/>
+            <CONNECTION INSTANCE="data_chooser_3" PORT="in0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q2" SIGIS="undef" SIGNAME="tran_2_2_Q2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S2"/>
+            <CONNECTION INSTANCE="decode138_1" PORT="A1"/>
+            <CONNECTION INSTANCE="data_chooser_0" PORT="in1"/>
+            <CONNECTION INSTANCE="data_chooser_1" PORT="in1"/>
+            <CONNECTION INSTANCE="data_chooser_2" PORT="in1"/>
+            <CONNECTION INSTANCE="data_chooser_3" PORT="in1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/turn_3_0" HWVERSION="1.0" INSTANCE="turn_3_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="turn_3" VLNV="xilinx.com:module_ref:turn_3:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_turn_3_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="in" RIGHT="0" SIGIS="undef" SIGNAME="select_153_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="select_153_0" PORT="Y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o0" SIGIS="undef" SIGNAME="turn_3_0_o0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="OR_0" PORT="In2_1"/>
+            <CONNECTION INSTANCE="OR_0" PORT="In3_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o1" SIGIS="undef" SIGNAME="turn_3_0_o1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="OR_0" PORT="In0_1"/>
+            <CONNECTION INSTANCE="OR_0" PORT="In1_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o2" SIGIS="undef"/>
+        <PORT DIR="O" NAME="o3" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/turn_4_0" HWVERSION="1.0" INSTANCE="turn_4_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="turn_4" VLNV="xilinx.com:module_ref:turn_4:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_turn_4_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="In" RIGHT="0" SIGIS="undef" SIGNAME="data_chooser_4_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_4" PORT="Y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="x0" SIGIS="undef" SIGNAME="turn_4_0_x0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bcdTo7seg_0" PORT="t0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="x1" SIGIS="undef" SIGNAME="turn_4_0_x1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bcdTo7seg_0" PORT="t1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="x2" SIGIS="undef" SIGNAME="turn_4_0_x2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bcdTo7seg_0" PORT="t2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="x3" SIGIS="undef" SIGNAME="turn_4_0_x3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bcdTo7seg_0" PORT="t3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/two_clk_0" HWVERSION="1.0" INSTANCE="two_clk_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="two_clk" VLNV="xilinx.com:module_ref:two_clk:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_two_clk_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk1" SIGIS="undef" SIGNAME="clk_div_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_div_0" PORT="clk_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk2" SIGIS="undef" SIGNAME="clk_div_1_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_div_1" PORT="clk_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sign" SIGIS="undef" SIGNAME="External_Ports_sign">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sign"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk" SIGIS="clk" SIGNAME="two_clk_0_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_chooser_0" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/year_generator_0" HWVERSION="1.0" INSTANCE="year_generator_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="year_generator" VLNV="xilinx.com:module_ref:year_generator:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="final_clock_year_generator_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="clock_chooser_0_year_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_chooser_0" PORT="year_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="five_or_0_Y4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="five_or_0" PORT="Y4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="year_0" RIGHT="0" SIGIS="undef" SIGNAME="year_generator_0_year_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_0" PORT="ar3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="year_1" RIGHT="0" SIGIS="undef" SIGNAME="year_generator_0_year_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_1" PORT="ar3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="year_2" RIGHT="0" SIGIS="undef" SIGNAME="year_generator_0_year_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_2" PORT="ar3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="year_3" RIGHT="0" SIGIS="undef" SIGNAME="year_generator_0_year_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_chooser_3" PORT="ar3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

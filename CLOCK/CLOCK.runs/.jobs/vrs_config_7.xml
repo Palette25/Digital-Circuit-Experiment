@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="final_clock_clk_div_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_clk_div_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_clk_div_3_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_clk_div_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_sec_generator_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_sec_generator_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_min_generator_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_min_generator_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_hour_generator_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_hour_generator_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_day_generator_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_day_generator_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_mon_generator_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_mon_generator_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_year_generator_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_year_generator_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_two_clk_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_two_clk_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_HIGH_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_HIGH_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_bcdTo7seg_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_bcdTo7seg_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_steper_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_steper_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_tran_2_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_tran_2_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_HIGH_1_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_HIGH_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_Ground_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_Ground_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_OR_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_OR_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_turn_3_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_turn_3_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_tran_2_1_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_tran_2_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_steper_3_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_steper_3_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_select_153_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_select_153_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_Ground_1_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_Ground_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_data_chooser_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_data_chooser_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_data_chooser_1_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_data_chooser_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_data_chooser_2_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_data_chooser_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_data_chooser_3_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_data_chooser_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_steper_1_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_steper_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_tran_2_2_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_tran_2_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_data_chooser_4_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_data_chooser_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_turn_4_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_turn_4_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_five_or_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_five_or_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_one_or_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_one_or_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_Ground_2_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_Ground_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_clock_chooser_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_clock_chooser_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="final_clock_alink_0_0_synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/final_clock_alink_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="final_clock_clk_div_0_0_synth_1"/>
+		<Parent Id="final_clock_clk_div_3_0_synth_1"/>
+		<Parent Id="final_clock_sec_generator_0_0_synth_1"/>
+		<Parent Id="final_clock_min_generator_0_0_synth_1"/>
+		<Parent Id="final_clock_hour_generator_0_0_synth_1"/>
+		<Parent Id="final_clock_day_generator_0_0_synth_1"/>
+		<Parent Id="final_clock_mon_generator_0_0_synth_1"/>
+		<Parent Id="final_clock_year_generator_0_0_synth_1"/>
+		<Parent Id="final_clock_two_clk_0_0_synth_1"/>
+		<Parent Id="final_clock_HIGH_0_0_synth_1"/>
+		<Parent Id="final_clock_bcdTo7seg_0_0_synth_1"/>
+		<Parent Id="final_clock_steper_0_0_synth_1"/>
+		<Parent Id="final_clock_tran_2_0_0_synth_1"/>
+		<Parent Id="final_clock_HIGH_1_0_synth_1"/>
+		<Parent Id="final_clock_Ground_0_0_synth_1"/>
+		<Parent Id="final_clock_OR_0_0_synth_1"/>
+		<Parent Id="final_clock_turn_3_0_0_synth_1"/>
+		<Parent Id="final_clock_tran_2_1_0_synth_1"/>
+		<Parent Id="final_clock_steper_3_0_0_synth_1"/>
+		<Parent Id="final_clock_select_153_0_0_synth_1"/>
+		<Parent Id="final_clock_Ground_1_0_synth_1"/>
+		<Parent Id="final_clock_data_chooser_0_0_synth_1"/>
+		<Parent Id="final_clock_data_chooser_1_0_synth_1"/>
+		<Parent Id="final_clock_data_chooser_2_0_synth_1"/>
+		<Parent Id="final_clock_data_chooser_3_0_synth_1"/>
+		<Parent Id="final_clock_steper_1_0_synth_1"/>
+		<Parent Id="final_clock_tran_2_2_0_synth_1"/>
+		<Parent Id="final_clock_data_chooser_4_0_synth_1"/>
+		<Parent Id="final_clock_turn_4_0_0_synth_1"/>
+		<Parent Id="final_clock_five_or_0_0_synth_1"/>
+		<Parent Id="final_clock_one_or_0_0_synth_1"/>
+		<Parent Id="final_clock_Ground_2_0_synth_1"/>
+		<Parent Id="final_clock_clock_chooser_0_0_synth_1"/>
+		<Parent Id="final_clock_alink_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="E:/VivadoProjects/CLOCK/CLOCK.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="final_clock_clk_div_0_0_synth_1"/>
+		<Parent Id="final_clock_clk_div_3_0_synth_1"/>
+		<Parent Id="final_clock_sec_generator_0_0_synth_1"/>
+		<Parent Id="final_clock_min_generator_0_0_synth_1"/>
+		<Parent Id="final_clock_hour_generator_0_0_synth_1"/>
+		<Parent Id="final_clock_day_generator_0_0_synth_1"/>
+		<Parent Id="final_clock_mon_generator_0_0_synth_1"/>
+		<Parent Id="final_clock_year_generator_0_0_synth_1"/>
+		<Parent Id="final_clock_two_clk_0_0_synth_1"/>
+		<Parent Id="final_clock_HIGH_0_0_synth_1"/>
+		<Parent Id="final_clock_bcdTo7seg_0_0_synth_1"/>
+		<Parent Id="final_clock_steper_0_0_synth_1"/>
+		<Parent Id="final_clock_tran_2_0_0_synth_1"/>
+		<Parent Id="final_clock_HIGH_1_0_synth_1"/>
+		<Parent Id="final_clock_Ground_0_0_synth_1"/>
+		<Parent Id="final_clock_OR_0_0_synth_1"/>
+		<Parent Id="final_clock_turn_3_0_0_synth_1"/>
+		<Parent Id="final_clock_tran_2_1_0_synth_1"/>
+		<Parent Id="final_clock_steper_3_0_0_synth_1"/>
+		<Parent Id="final_clock_select_153_0_0_synth_1"/>
+		<Parent Id="final_clock_Ground_1_0_synth_1"/>
+		<Parent Id="final_clock_data_chooser_0_0_synth_1"/>
+		<Parent Id="final_clock_data_chooser_1_0_synth_1"/>
+		<Parent Id="final_clock_data_chooser_2_0_synth_1"/>
+		<Parent Id="final_clock_data_chooser_3_0_synth_1"/>
+		<Parent Id="final_clock_steper_1_0_synth_1"/>
+		<Parent Id="final_clock_tran_2_2_0_synth_1"/>
+		<Parent Id="final_clock_data_chooser_4_0_synth_1"/>
+		<Parent Id="final_clock_turn_4_0_0_synth_1"/>
+		<Parent Id="final_clock_five_or_0_0_synth_1"/>
+		<Parent Id="final_clock_one_or_0_0_synth_1"/>
+		<Parent Id="final_clock_Ground_2_0_synth_1"/>
+		<Parent Id="final_clock_clock_chooser_0_0_synth_1"/>
+		<Parent Id="final_clock_alink_0_0_synth_1"/>
+	</Run>
+</Runs>
+

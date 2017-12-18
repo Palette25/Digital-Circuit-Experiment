@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1513489334">
+  <File Type="RDS-PROPCONSTRS" Name="final_clock_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="final_clock.tcl"/>
+  <File Type="RDS-RDS" Name="final_clock.vds"/>
+  <File Type="RDS-UTIL" Name="final_clock_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="final_clock_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="final_clock.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="final_clock_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="final_clock_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/clock_modules.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/final_clock/final_clock.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="final_clock"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/final.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_year_generator_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_sec_generator_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_clk_div_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_one_or_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_five_or_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_day_generator_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_decode138_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_min_generator_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_HIGH_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_clk_div_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_OR_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_HIGH_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_clk_div_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_decode138_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_hour_generator_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_mon_generator_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_two_clk_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_data_chooser_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_bcdTo7seg_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_steper_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_tran_2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_alink_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_Ground_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_turn_3_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_tran_2_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_steper_3_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_select_153_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_Ground_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_data_chooser_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_data_chooser_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_data_chooser_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_steper_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_tran_2_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_data_chooser_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_turn_4_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_Ground_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="final_clock_clock_chooser_0_0"/>
+</GenRun>

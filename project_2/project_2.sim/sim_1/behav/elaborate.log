@@ -1,0 +1,5 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1b465f55b63248549555a2e3e38989e5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AndLogic1_behav xil_defaultlib.AndLogic1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.AndLogic1 in library work located at xsim.dir/work.

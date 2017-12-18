@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Dec 10 20:12:17 2017
+# Process ID: 16672
+# Current directory: E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/calculator_12_mux_8_to_1_1_1_synth_1
+# Command line: vivado.exe -log calculator_12_mux_8_to_1_1_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source calculator_12_mux_8_to_1_1_1.tcl
+# Log file: E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/calculator_12_mux_8_to_1_1_1_synth_1/calculator_12_mux_8_to_1_1_1.vds
+# Journal file: E:/VivadoProjects/sync_12_calculator/sync_12_calculator.runs/calculator_12_mux_8_to_1_1_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source calculator_12_mux_8_to_1_1_1.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP calculator_12_mux_8_to_1_1_1, cache-ID = 1d012a386fdbb242.
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 10 20:12:24 2017...
